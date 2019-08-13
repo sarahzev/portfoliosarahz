@@ -1,0 +1,201 @@
+/* Web Fonts -------------------- */
+
+@font-face {
+  font-family: 'marketdeco';
+  src: url('../fonts/marketdeco.woff') format('woff'),
+       url('../fonts/marketdeco.ttf') format('truetype');
+}
+
+/* Base Styles -------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: white;
+	background-color: #eaf9f6;
+	font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+	.main-header,
+	.main-nav,
+	.primary-content,
+	.main-footer {
+	text-align: center;
+}
+
+
+ul {
+	list-style-type: none;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: deeppink;
+  text-decoration: none;
+}
+
+a:visited {
+  color: deeppink;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+a:active {
+  color: white;
+}
+
+
+/* Main Styles --------------------- */
+
+
+/* Layout Styles ------------------ */
+
+
+.social-media {
+	max-width: 9%;
+	margin: 10px;
+	transition: transform .5s cubic-bezier(.7,-0.39,.31,1.38); 
+}
+
+.social-media:hover {
+	transform: rotate(-5deg) scale(1.1);
+}
+
+.mooncat2 {
+  width: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 0%;
+}
+
+.name {
+	color: #7ebcb9;
+	margin-left: 20px;
+	font-family: "marketdeco", Helvetica, Arial, sans-serif;
+	font-size: 2.5em;
+}
+
+.main-nav {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #fff;
+	padding: 10px; 
+}
+
+.banner {
+	border-radius: 0%;
+	width: 400px;
+	padding-top: 20px;
+	padding-bottom: 45px;
+}
+
+.primary-content {
+  color: grey;
+  text-align: center;
+  padding: 20px 50px;
+  margin: auto;
+  width: 450px;
+  background: #fff;
+}
+
+.bannerimage {
+	text-align: center;
+}
+
+.main-footer {
+  color: #7ebcb9;
+  background: white;
+  font-size: 0.9em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+/* Gallery images */
+
+.gallery-image {
+	max-width: 25%;
+	transition: transform .5s cubic-bezier(.7,-0.39,.31,1.38);
+}
+
+.gallery {
+	text-align: center;
+}
+
+.gallery img:hover {
+	transform: rotate(-5deg) scale(1.1);
+}
+
+.col {
+	margin: 10px;
+}
+
+
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+/* Media Queries -------------------- */
+
+@media (min-width: 770px) {
+	
+	body {
+		padding-top: 120px;
+	}
+	
+	.main-header {
+  position: fixed;
+  background: white;
+  box-shadow: 0 1px 4px rgba (0,0,0,.4);
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+	
+	.name {
+		float: left;
+		margin-left: 30px;
+	}
+
+
+	.main-nav {
+		float: right;
+		margin-top: 35px;
+	    margin-right: 40px;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+		font-size: 1.1em;
+	}
+	
+	.banner {
+		width: 600px;
+	}
+	
+	.primary-content {
+		width: 700px;
+	}
+	
+	.mooncat {
+		width: 900px;
+	}
